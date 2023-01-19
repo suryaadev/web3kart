@@ -11,17 +11,21 @@ const tokens = (n) => {
     return ethers.utils.parseUnits(n.toString(), "ether")
 }
 
-async function main() {}
+async function main() {
+    const kartFactory = await hre.ethers.getContractFactory("Dappazon")
+    const kartContract = await kartFactory.deploy()
+    await kartContract.deployed()
+    console.log(`Contract deployed at ::: ${kartContract.address}`)
+}
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
-const kartFactory = await hre.ethers.getContractFactory("")
-const kartContract = await kartFactory.deploy()
-await kartContract.deployed()
-console.log(`Contract deployed at ::: ${kartContract.address}`)
+
 main()
     .then(() => process.exit(0))
     .catch((error) => {
         console.error(error)
         process.exitCode = 1
     })
+
+// 0x5Cd2be98819c1C3Fa0e9b788F9Bd23C9a6D92710
