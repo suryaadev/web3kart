@@ -32,3 +32,6 @@ In a separate terminal execute:
 
 ## Contract deployed on Goerli 
 `0x5Cd2be98819c1C3Fa0e9b788F9Bd23C9a6D92710`
+
+To be implemented 
+1. UI
