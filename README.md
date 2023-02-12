@@ -35,3 +35,4 @@ In a separate terminal execute:
 
 To be implemented 
 1. UI
+2. contract logic implemented
